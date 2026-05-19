@@ -1,3 +1,8 @@
+from cli import main
+
+
+if __name__ == '__main__':
+    raise SystemExit(main())
 def is_leap(year: int) -> bool:
     """Возвращает True, если год високосный."""
     return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)
